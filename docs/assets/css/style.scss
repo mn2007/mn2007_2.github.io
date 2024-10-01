@@ -1,0 +1,148 @@
+---
+---
+
+$header-bg-color: #80796c;
+$header-bg-color-secondary: #5b5c76;
+
+$dark-header-bg-color: #333333;
+$dark-header-bg-color-secondary: #333333;
+
+$section-headings-color: #333333;
+$body-link-color: #82aaaa;
+
+$blockquote-text-color: #333333;
+
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+  justify-content: center;
+}
+.main-nav li {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+.main-nav a {
+  color: #82aaaa;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: #82aaaa;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-transform: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@import 'jekyll-theme-cayman';
+
+.btn {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #181818;
+    color: #bac1c4;
+  }
+  
+  .page-header {
+    background-color: $dark-header-bg-color;
+    background-image: linear-gradient(120deg, $dark-header-bg-color-secondary, $dark-header-bg-color);
+  }
+  
+  .btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.07);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  img[src$=".svg"] {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  
+  .main-content h1,
+  .main-content h2,
+  .main-content h3,
+  .main-content h4,
+  .main-content h5,
+  .main-content h6 {
+    color: #333333;
+  }
+  
+  a {
+    color: cornflowerblue;
+  }
+  
+  div.highlight {
+    background-color: transparent;
+  }
+  
+  .main-content pre.highlight {
+    background-color: #333;
+    border: solid 2px;
+  }
+  
+  .main-content code {
+    color: hsl(199deg, 36%, 73%);
+    background-color: #333;
+  }
+  
+  .highlight .ge,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .k,
+  .highlight .kv,
+  .highlight .ow,
+  .highlight .o {
+    color: #fff;
+  }
+  
+  .main-content pre > code {
+    color: hsl(199deg, 56%, 73%);
+  }
+
+}

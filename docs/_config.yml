@@ -18,15 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: テンプレート
-description: テンプレートです
-
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+title: AkaiKKR Documents
+description: Technical Instructions for AkaiKKR Users
+url: "https://academeia.github.io/AkaiKKR_Documents/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "AkaiKKR_Documents" # the subpath of your site, e.g. /blog
 
 # Build settings
-#remote_theme: pages-themes/cayman@v0.2.0
-remote_theme: pages-themes/slate@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
