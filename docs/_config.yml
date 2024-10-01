@@ -25,8 +25,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
-#remote_theme: pages-themes/cayman@v0.2.0
-remote_theme: chrisrhymes/bulma-clean-theme
+remote_theme: pages-themes/cayman
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
